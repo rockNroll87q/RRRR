@@ -43,6 +43,9 @@ python ./training.py \
 		--log_name='./results_RRRR/my_log.log' 
 ~~~~
 
+## Demo
+
+Please see `demo.py` to see an example on how to use the code.
 
 ## Authors
 
