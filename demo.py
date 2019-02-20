@@ -48,7 +48,7 @@ grid_search             = GridSearchCV(rrr, parameters_grid_search, cv=ps_for_va
 
 grid_search.fit(np.concatenate((trainX,validX)), np.concatenate((trainY,validY)))
 
-# takes ~10 min on a regular desktop pc
+# takes ~25 min on a regular desktop pc
 
 # Display the best combination of values found
 grid_search.best_params_
