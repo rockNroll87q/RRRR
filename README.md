@@ -7,7 +7,7 @@ Mukherjee, A., & Zhu, J. (2011). Reduced rank ridge regression and its kernel ex
 
 And used in the paper:  
 
-[Transfer learning of deep neural network representations for fMRI decoding](https://google.com)  
+[Transfer learning of deep neural network representations for fMRI decoding](https://doi.org/10.1101/535377)  
 Michele Svanera, Mattia Savardi, Sergio Benini, Alberto Signoroni, Gal Raz, Talma Hendler, Lars Muckli, Rainer Goebel, Giancarlo Valente, 
 Biorvix, 2019. 
 
@@ -58,7 +58,17 @@ Please look at `demo.py` to see an example on how to use the code.
 
 If you find this code useful in your research, please, consider citing our paper:
 ```
-TO ADD
+@article {SSB19,
+	author = {Svanera, Michele and Savardi, Mattia and Benini, Sergio and Signoroni, Alberto and Raz, Gal and Hendler, Talma and Muckli, Lars and Goebel, Rainer and Valente, Giancarlo},
+	title = {Transfer learning of deep neural network representations for fMRI decoding},
+	elocation-id = {535377},
+	year = {2019},
+	doi = {10.1101/535377},
+	publisher = {Cold Spring Harbor Laboratory},
+	URL = {https://www.biorxiv.org/content/early/2019/02/04/535377},
+	eprint = {https://www.biorxiv.org/content/early/2019/02/04/535377.full.pdf},
+	journal = {bioRxiv}
+}
 ```
 
 And cite the original work:
