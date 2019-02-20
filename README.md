@@ -45,7 +45,7 @@ python ./training.py \
 
 ## Demo
 
-Please see `demo.py` to see an example on how to use the code.
+Please look at `demo.py` to see an example on how to use the code.
 
 ## Authors
 
