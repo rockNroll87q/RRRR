@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 @author: Michele Svanera
@@ -15,8 +15,8 @@ import reduced_rank_regressor as RRR
 
 ######################################### Path settings + Constant ##########################################
 
-N_PARAMETERS_GRID_SEARCH = 20 
-Data_path = "../data/"
+N_PARAMETERS_GRID_SEARCH = 20
+Data_path = "./data/"
 
 
 ########################################## Load Data ##########################################
@@ -51,13 +51,11 @@ grid_search.fit(np.concatenate((trainX,validX)), np.concatenate((trainY,validY))
 # takes ~25 min on a regular desktop pc
 
 # Display the best combination of values found
-grid_search.best_params_
-means = grid_search.cv_results_['mean_test_score']
-means = np.array(means).reshape(N_PARAMETERS_GRID_SEARCH, N_PARAMETERS_GRID_SEARCH+1)
-grid_search.best_score_
+print(grid_search.best_params_)
+print(grid_search.best_score_)
 
 # Graph
-scores = [x[1] for x in grid_search.grid_scores_]
+scores = grid_search.cv_results_['mean_test_score']
 scores = np.array(scores).reshape(N_PARAMETERS_GRID_SEARCH, N_PARAMETERS_GRID_SEARCH+1)
 
 import plotly
@@ -69,19 +67,19 @@ layout = go.Layout(
                     xaxis = dict(
                         title='Regression',
                         ticktext= [str("%0.*e"%(0,x)) for x in reg_grid][::2],
-                        tickvals= range(reg_grid.shape[0])[::2]
+                        tickvals= [*range(reg_grid.shape[0])[::2]]
                         ),
                     yaxis = dict(
                         title='Rank',
                         ticktext= [str("%0.*e"%(0,x)) for x in rank_grid][::2],
-                        tickvals= range(rank_grid.shape[0])[::2]
+                        tickvals= [*range(rank_grid.shape[0])[::2]]
                         ),
                     zaxis = dict(
                         title='Train error'),
                     )
                     )
 fig = go.Figure(data=data, layout=layout)
-plotly.offline.plot(fig, filename='elevations-3d-surface')
+plotly.offline.plot(fig, filename='elevations-3d-surface.html')
 
 
 
@@ -96,10 +94,10 @@ rrr.fit(trainX, trainY)
 Yhat                    = rrr.predict(testX).real
 
 MSE                     = (np.power((testY - Yhat),2)/np.prod(testY.shape)).mean()
-print MSE
+print(MSE)
 
 diag_corr               = (np.diag(np.corrcoef(testY,Yhat)))
-print diag_corr.mean()
+print(diag_corr.mean())
 
     
     
