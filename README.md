@@ -56,7 +56,7 @@ Please look at `demo.py` to see an example on how to use the code.
 
 ## Citation
 
-If you find this code useful in your research, please, consider citing our paper:
+If you find this code useful in your research, please consider citing our paper:
 ```
 @article {SSB19,
 	author = {Svanera, Michele and Savardi, Mattia and Benini, Sergio and Signoroni, Alberto and Raz, Gal and Hendler, Talma and Muckli, Lars and Goebel, Rainer and Valente, Giancarlo},
