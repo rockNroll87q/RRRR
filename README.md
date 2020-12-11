@@ -7,9 +7,8 @@ Mukherjee, A., & Zhu, J. (2011). Reduced rank ridge regression and its kernel ex
 
 And used in the paper:  
 
-[Transfer learning of deep neural network representations for fMRI decoding](https://doi.org/10.1101/535377)  
-Michele Svanera, Mattia Savardi, Sergio Benini, Alberto Signoroni, Gal Raz, Talma Hendler, Lars Muckli, Rainer Goebel, Giancarlo Valente, 
-Biorvix, 2019. 
+[Transfer learning of deep neural network representations for fMRI decoding](https://doi.org/10.1016/j.jneumeth.2019.108319)  
+Svanera, M., Savardi, M., Benini, S., Signoroni, A., Raz, G., Hendler, T., ... & Valente, G. (2019). Journal of neuroscience methods, 328, 108319.
 
 
 ## Description
